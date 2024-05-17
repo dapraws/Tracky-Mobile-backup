@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:tracky/app/shared/themes/color.dart';
-import 'package:tracky/app/shared/themes/font.dart';
 
 ThemeData themeData = ThemeData(
   fontFamily: 'Poppins',

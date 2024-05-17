@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 import 'package:get/get.dart';
 
@@ -9,11 +10,22 @@ class HomeView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Center(
-        child: Text(
-          'HomeView is working',
-          style: TextStyle(fontSize: 20),
-        ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // Greet message
+          Text("Hello,"),
+          Text("Admin"),
+
+          // Asset container
+          Row(
+            children: [],
+          ),
+
+          // Ongoing activity
+          // Search bar
+          // List
+        ],
       ),
     );
   }
