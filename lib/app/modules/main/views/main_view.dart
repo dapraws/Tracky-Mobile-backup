@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:tracky/app/modules/home/views/home_view.dart';
+import 'package:tracky/app/modules/your_asset/views/your_asset_view.dart';
 import 'package:tracky/app/shared/widgets/bottomnavbar_widget.dart';
 
 import '../controllers/main_controller.dart';
@@ -35,6 +36,9 @@ class MainView extends GetView<MainController> {
               index: controller.tabIndex,
               children: const [
                 HomeView(),
+                YourAssetView(),
+                HomeView(),
+                YourAssetView(),
               ],
             ),
           ),
