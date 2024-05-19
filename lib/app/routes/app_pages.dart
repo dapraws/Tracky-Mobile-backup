@@ -8,6 +8,8 @@ import '../modules/main/bindings/main_binding.dart';
 import '../modules/main/views/main_view.dart';
 import '../modules/register/bindings/register_binding.dart';
 import '../modules/register/views/register_view.dart';
+import '../modules/your_asset/bindings/your_asset_binding.dart';
+import '../modules/your_asset/views/your_asset_view.dart';
 
 part 'app_routes.dart';
 
@@ -36,6 +38,11 @@ class AppPages {
       name: _Paths.REGISTER,
       page: () => const RegisterView(),
       binding: RegisterBinding(),
+    ),
+    GetPage(
+      name: _Paths.YOUR_ASSET,
+      page: () => const YourAssetView(),
+      binding: YourAssetBinding(),
     ),
   ];
 }
