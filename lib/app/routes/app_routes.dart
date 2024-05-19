@@ -8,6 +8,7 @@ abstract class Routes {
   static const MAIN = _Paths.MAIN;
   static const REGISTER = _Paths.REGISTER;
   static const YOUR_ASSET = _Paths.YOUR_ASSET;
+  static const DETAIL_ASSET = _Paths.DETAIL_ASSET;
 }
 
 abstract class _Paths {
@@ -17,4 +18,5 @@ abstract class _Paths {
   static const MAIN = '/main';
   static const REGISTER = '/register';
   static const YOUR_ASSET = '/your-asset';
+  static const DETAIL_ASSET = '/detail-asset';
 }

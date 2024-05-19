@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../modules/detail_asset/bindings/detail_asset_binding.dart';
+import '../modules/detail_asset/views/detail_asset_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/login/bindings/login_binding.dart';
@@ -43,6 +45,11 @@ class AppPages {
       name: _Paths.YOUR_ASSET,
       page: () => const YourAssetView(),
       binding: YourAssetBinding(),
+    ),
+    GetPage(
+      name: _Paths.DETAIL_ASSET,
+      page: () => const DetailAssetView(),
+      binding: DetailAssetBinding(),
     ),
   ];
 }
