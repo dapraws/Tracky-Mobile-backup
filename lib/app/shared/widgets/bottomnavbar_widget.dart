@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:svg_flutter/svg.dart';
 import 'package:tracky/app/shared/themes/font.dart';
 
 class BottomNavBar extends StatelessWidget {
@@ -21,50 +22,70 @@ class BottomNavBar extends StatelessWidget {
       unselectedItemColor: Colors.grey,
       showSelectedLabels: true,
       showUnselectedLabels: true,
-      selectedLabelStyle: body2Bold,
-      unselectedLabelStyle: body2Regular,
+      selectedLabelStyle: body2Regular.copyWith(
+        fontSize: 10,
+      ),
+      unselectedLabelStyle: body2Regular.copyWith(
+        fontSize: 10,
+      ),
       items: [
         BottomNavigationBarItem(
-          icon: Image.asset(
-            "assets/icons/ic_home.png",
+          icon: SvgPicture.asset(
+            'assets/icons/ic_home.svg',
             height: 24,
           ),
-          activeIcon: Image.asset(
-            "assets/icons/ic_home_active.png",
+          activeIcon: SvgPicture.asset(
+            'assets/icons/ic_home.svg',
+            colorFilter: const ColorFilter.mode(
+              Colors.amber,
+              BlendMode.srcIn,
+            ),
             height: 24,
           ),
           label: 'Home',
         ),
         BottomNavigationBarItem(
-          icon: Image.asset(
-            "assets/icons/ic_asset.png",
+          icon: SvgPicture.asset(
+            'assets/icons/ic_your_asset.svg',
             height: 24,
           ),
-          activeIcon: Image.asset(
-            "assets/icons/ic_asset_active.png",
+          activeIcon: SvgPicture.asset(
+            'assets/icons/ic_your_asset.svg',
             height: 24,
+            colorFilter: const ColorFilter.mode(
+              Colors.amber,
+              BlendMode.srcIn,
+            ),
           ),
           label: 'Your Asset',
         ),
         BottomNavigationBarItem(
-          icon: Image.asset(
-            "assets/icons/ic_request.png",
+          icon: SvgPicture.asset(
+            'assets/icons/ic_asset_request.svg',
             height: 24,
           ),
-          activeIcon: Image.asset(
-            "assets/icons/ic_request_active.png",
+          activeIcon: SvgPicture.asset(
+            'assets/icons/ic_asset_request.svg',
             height: 24,
+            colorFilter: const ColorFilter.mode(
+              Colors.amber,
+              BlendMode.srcIn,
+            ),
           ),
           label: 'Asset Request',
         ),
         BottomNavigationBarItem(
-          icon: Image.asset(
-            "assets/icons/ic_livetracking.png",
-            height: 24,
+          icon: SvgPicture.asset(
+            'assets/icons/ic_live_tracking.svg',
+            height: 30,
           ),
-          activeIcon: Image.asset(
-            "assets/icons/ic_livetracking_active.png",
-            height: 24,
+          activeIcon: SvgPicture.asset(
+            'assets/icons/ic_live_tracking.svg',
+            height: 30,
+            colorFilter: const ColorFilter.mode(
+              Colors.amber,
+              BlendMode.srcIn,
+            ),
           ),
           label: 'Live Tracking',
         ),
